@@ -8,7 +8,7 @@ load_dotenv()
 # создаём объект бота и диспетчера (маршрутизатора)
 bot = Bot(token=getenv("bot_token"))
 dp = Dispatcher()
-dp.include_router(client_routerweather)
+dp.include_router(client_router.weather)
 
 
 
